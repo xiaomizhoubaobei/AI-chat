@@ -65,5 +65,5 @@ main:
                 branch: main
                 git_user: ${GIT_USERNAME}
                 git_email: ${GIT_EMAIL}
-      "crontab: 0 0 1 * *": !reference [.pipeline]
+      "crontab: 0 0 * * 1": !reference [.pipeline]
       web_trigger_one: !reference [.pipeline]
